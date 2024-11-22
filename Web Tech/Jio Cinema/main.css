@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#navBlock{
+    width: 100%;
+    height: 80px;
+    background-color: #091A2D;
+    color: #fff;
+    border-bottom: 2px solid #505050;
+}
+#navBlock > article{
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+}
+.logoBlock{
+    flex-basis: 60%;
+    height: inherit;
+    display: flex;
+}
+.logoBlock > div:first-child{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logoBlock > div:first-child > span:first-child{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #D9008D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoBlock > div:first-child > span:last-child{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.logoBlock > div:nth-child(2){
+    flex-basis: 20%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logoBlock > div:nth-child(2) > a{
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+   color: #C1A362;
+   border: 2px solid #C1A362;
+   position: relative;
+}
+/* .logoBlock > div:nth-child(2)::after{
+    content: "";
+    width: 8px;
+    height: 2px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    box-shadow: 0px 0px 30px 0px rgb(231, 231, 231);
+} */
+.logoBlock > ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.logoBlock > ul > li > a{
+    text-decoration: none;
+    color: #B5BBC1;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 26px 10px;
+    margin: 0px 4px;
+    transition: all 0.2s ease;
+}
+.logoBlock > ul > li > a:hover{
+    border-bottom:4px solid #D9008D;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: #fff;
+    cursor: pointer;
+}
+.menuBlock{
+    flex-basis: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.loginIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #484848;
+    margin-left: 20px
+}
+.loginIcon > i{
+    font-size: 25px;
+}
+.inputSearch{
+    position: relative;
+}
+.inputSearch > .serachIcon{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.inputSearch > .serachIcon:hover{
+    background-color: #40536acc;
+    transition: all 0.3s;
+}
+.inputSearch > .mic{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.inputSearch > .mic:hover{
+    background-color: #40536acc;
+    transition: all 0.3s;
+}
+.inputSearch > input{
+    width: 300px;
+    height: 40px;
+    padding: 0px 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: #223143;
+    color: #fff;
+}
+.inputSearch > input::placeholder{
+    font-size: 17px;
+    color: #B5BBC1;
+}
+
+/* !scroll navbar starts */
+#scrollNavbar{
+    width: 100%;
+    height: 80px;
+    background-color: #091A2D;
+    color: #fff;
+}
+#scrollNavbar > article{
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+    overflow: scroll;
+}
+#scrollNavbar > article::-webkit-scrollbar{
+    display: none;
+}
+#scrollNavbar > article > ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#scrollNavbar > article > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 25px;
+    margin: 4px;
+    background-color: #3A4A5D;
+    border-radius: 25px;
+}
+
+/* !advertise block starts */
+#advertiseBlock{
+    width: 100%;
+    height: 152px;
+    background-image: linear-gradient(#091C32 , #0A1728);
+}
+#advertiseBlock > article{
+width: 50%;
+height: inherit;  
+margin: 0 auto;  
+display: flex;
+padding: 20px;
+}
+.imageAdv{
+    flex-basis: 60%;
+}
+.imageAdv > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.entertainPlan{
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+}
+.clipBoardImg{
+    flex-basis: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clipBoardImg > span{
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    background-color: #D9008D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clipBoardImg > span > i{
+    color: #fff;
+    font-size: 27px;
+}
+.subscribeContent{
+    flex-basis: 70%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.subscribeContent > h1{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.subscribeContent > p{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.subscribeContent > button{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #616365;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* !videoSection starts here */
+#videoBlock{
+    width: 100%;
+    height: 70vh;
+    background-color: #091A2D;
+    color: #fff;
+}
+#videoBlock > article{
+    width: 100%;
+    height: 70vh;
+    overflow: scroll;
+}
+#videoBlock > article::-webkit-scrollbar{
+    display: none;
+}
+#videoBlock > article > ul{
+    width: 200%;
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+}
+#videoBlock > article > ul > li{
+    width: 450px;
+    margin: 4px;
+}
+#videoBlock > article > ul > li > iframe{
+    width: 100%;
+    height: 100%;
+} 
+#videoBlock > article > ul > li > img{
+    width: 100%;
+    height: 100%;
+border-radius: 14px;
+}
